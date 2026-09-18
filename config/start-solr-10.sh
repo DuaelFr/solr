@@ -43,4 +43,4 @@ else
   gosu solr:solr docker-entrypoint.sh precreate-core "$LANDO_SOLR_CORE"
 fi
 
-gosu solr:solr solr start -f
+gosu solr:solr solr-precreate "$LANDO_SOLR_CORE"
